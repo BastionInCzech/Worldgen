@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/Cell.gd" type="Script" id=1]
+[ext_resource path="res://scenes/hill.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/water.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/meadow.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/forest.tscn" type="PackedScene" id=5]
+
+[node name="Cell" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="hill" parent="." instance=ExtResource( 2 )]
+visible = false
+
+[node name="forest" parent="." instance=ExtResource( 5 )]
+visible = false
+
+[node name="meadow" parent="." instance=ExtResource( 4 )]
+visible = false
+
+[node name="water" parent="." instance=ExtResource( 3 )]
+visible = false
